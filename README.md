@@ -38,8 +38,7 @@ This project demonstrates a **complete, production-style DevSecOps workflow** fr
 ## 🏗️ Architecture
 
 <p align="center">
-  <img width="451" height="961" alt="GitOps1" src="https://github.com/user-attachments/assets/10179323-e54d-4013-aa55-0631d6ad191e" />
-
+  <img width="451" height="961" alt="GitOps Arch" src="https://github.com/user-attachments/assets/10179323-e54d-4013-aa55-0631d6ad191e" />
 </p>
 
 ---
@@ -48,7 +47,7 @@ This project demonstrates a **complete, production-style DevSecOps workflow** fr
 
 > Every commit triggers a full security gate before any image is built or pushed.
 <p align="center">
-  <img width="1863" height="1028" alt="image" src="https://github.com/user-attachments/assets/9e0b75fd-ec73-4909-a957-992ba1b8236d" />
+  <img width="1863" height="1028" alt="CI Pipline" src="https://github.com/user-attachments/assets/9e0b75fd-ec73-4909-a957-992ba1b8236d" />
 </p>
 
 **Stage-by-stage breakdown:**
@@ -115,14 +114,9 @@ This ensures every production release is intentional, reviewed, and traceable in
 ## 🔐 Shift-Left Security
 
 Security is enforced at multiple stages — not just at deployment.
-
-<!-- 📸 ADD TRIVY SCAN OUTPUT SCREENSHOT HERE -->
-<!-- Show: Trivy blocking a vulnerable image (exit code 1) OR clean scan passing -->
-<!-- File: docs/screenshots/trivy-scan-result.png -->
-
-```
-[ INSERT TRIVY SCAN OUTPUT — showing blocked or clean result ]
-```
+<p align="center">
+  <img width="1867" height="1030" alt="Trivy scan" src="https://github.com/user-attachments/assets/95e551fc-98a3-4715-b420-4fd8b67bfd50" />
+</p>
 
 | Tool | Stage | Detects | Blocks pipeline |
 |---|---|---|---|
@@ -142,9 +136,9 @@ Advanced deployment strategies are implemented to reduce risk during every relea
 <!-- Show: canary traffic split or blue-green switch in progress -->
 <!-- File: docs/screenshots/progressive-delivery.png -->
 
-```
-[ INSERT CANARY OR BLUE-GREEN DEPLOYMENT SCREENSHOT ]
-```
+<p align="center">
+  <img alt="Progressive Delivery" src="" />
+</p>
 
 **Canary deployment (Staging):**
 - New version receives a small % of traffic first
@@ -183,17 +177,9 @@ Advanced deployment strategies are implemented to reduce risk during every relea
 <!-- Show: a real dashboard with metrics (request rate, latency, pod count, CPU) -->
 <!-- File: docs/screenshots/grafana-dashboard.png -->
 
-```
-[ INSERT GRAFANA DASHBOARD SCREENSHOT — real metrics visible ]
-```
-
-<!-- 📸 ADD SLACK ALERT SCREENSHOT HERE -->
-<!-- Show: Alertmanager firing an alert to your Slack channel -->
-<!-- File: docs/screenshots/slack-alert.png -->
-
-```
-[ INSERT SLACK ALERT SCREENSHOT ]
-```
+<p align="center">
+  <img alt="Grafana Dashboard" src="" />
+</p>
 
 - **Prometheus** scrapes application and cluster metrics on a defined scrape interval
 - **Grafana** provides real-time dashboards (request rate, error rate, latency, pod health)
