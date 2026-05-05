@@ -37,31 +37,19 @@ This project demonstrates a **complete, production-style DevSecOps workflow** fr
 
 ## 🏗️ Architecture
 
-<!-- 📸 ADD YOUR ARCHITECTURE DIAGRAM HERE -->
-<!-- Recommended: export from draw.io or Excalidraw as PNG -->
-<!-- Size: 900px wide minimum for clarity -->
-<!-- File: docs/screenshots/architecture.png -->
+<p align="center">
+  <img width="451" height="961" alt="GitOps1" src="https://github.com/user-attachments/assets/10179323-e54d-4013-aa55-0631d6ad191e" />
 
-```
-[ INSERT ARCHITECTURE DIAGRAM IMAGE HERE ]
-```
-
-> Suggested tool: draw.io, Excalidraw, or Lucidchart  
-> Show: GitHub → GitHub Actions → Docker Hub → ArgoCD → K8s (dev/staging/prod namespaces) → Prometheus → Grafana
+</p>
 
 ---
 
 ## 🔄 CI Pipeline Flow
 
 > Every commit triggers a full security gate before any image is built or pushed.
-
-<!-- 📸 ADD YOUR GITHUB ACTIONS PIPELINE SCREENSHOT HERE -->
-<!-- Show: all steps passing (green checks) in the Actions tab -->
-<!-- File: docs/screenshots/github-actions-pipeline.png -->
-
-```
-[ INSERT GITHUB ACTIONS PIPELINE SCREENSHOT — all green checks ]
-```
+<p align="center">
+  <img width="1863" height="1028" alt="image" src="https://github.com/user-attachments/assets/9e0b75fd-ec73-4909-a957-992ba1b8236d" />
+</p>
 
 **Stage-by-stage breakdown:**
 
@@ -79,14 +67,6 @@ This project demonstrates a **complete, production-style DevSecOps workflow** fr
 ## 🌍 Multi-Environment Deployment
 
 Three isolated environments, each with its own Helm values, resource limits, and deployment strategy.
-
-<!-- 📸 ADD ARGOCD SCREENSHOT HERE -->
-<!-- Show: all 3 apps (dev, staging, prod) in Synced/Healthy state -->
-<!-- File: docs/screenshots/argocd-three-envs.png -->
-
-```
-[ INSERT ARGOCD DASHBOARD SCREENSHOT — 3 environments synced ]
-```
 
 | Environment | Trigger | Replicas | Strategy | Values file |
 |---|---|---|---|---|
